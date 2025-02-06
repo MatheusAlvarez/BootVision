@@ -84,5 +84,78 @@
 
     <!-- Fim Seção Tabs -->
 
+    <!-- Section Planos -->    
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Planos e Preços</h2>
+            <table class="table">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Planos</th>
+                    <th scope="col">Recursos</th>
+                    <th scope="col">Preço Mensal</th>
+                    <th scope="col">Ação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>                    
+                    <td>Básico</td>
+                    <td>Suporte simples, site educacional, 1 conta de e-mail</td>
+                    <td>R$100,00</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contratar</button>
+                    </td>
+                  </tr>
+                  <tr>                    
+                    <td>Profissional</td>
+                    <td>Suporte intermediário, Site + 1 blog, 5 contas de e-mail</td>
+                    <td>R$250,00</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contratar</button>
+                    </td>
+                  </tr>
+                  <tr>                                        
+                    <td>Premium</td>
+                    <td>Suporte avançado, E-commerce, contas de e-mail ilimitadas</td>
+                    <td>R$500,00</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contratar</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contratar planos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">E-mail</label>
+                          <input type="email" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>                
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Contratar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Fim Section Planos -->
+
 </body>
 </html>
